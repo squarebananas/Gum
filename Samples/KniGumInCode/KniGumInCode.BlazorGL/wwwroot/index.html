@@ -35,12 +35,9 @@
             // that don't support content compression and http://.
             var enableBrotliDecompression = false;
             Blazor.start({
-            loadBootResource: function (type, name, defaultUri, integrity)
-            {
-                if (enableBrotliDecompression === true && type !== 'dotnetjs' && location.hostname !== 'localhost')
-                {
-                    return (async function()
-                    {
+                loadBootResource: function (type, name, defaultUri, integrity){
+                    if (enableBrotliDecompression === true && type !== 'dotnetjs' && location.hostname !== 'localhost'){
+                        return (async function(){
                             const response = await fetch(defaultUri + '.br', { cache: 'no-cache' });
                             if (!response.ok)
                                 throw new Error(response.statusText);
@@ -51,7 +48,7 @@
                                 : 'application/octet-stream';
                             const decompressedResponseArray = BrotliDecode(originalResponseArray);
                             return new Response(decompressedResponseArray,
-                                            { headers: { 'content-type': contentType }
+                                {headers: { 'content-type': contentType }
                                 });
                         })();
                     }
@@ -72,14 +69,12 @@
         <script src="_content/nkast.Wasm.XR/js/XR.8.0.5.js"></script>
 
         <script>
-        function tickJS()
-        {
+            function tickJS(){
                 window.theInstance.invokeMethod('TickDotNet');
                 window.requestAnimationFrame(tickJS);
             }
 
-        window.initRenderJS = (instance) =>
-        {
+            window.initRenderJS = (instance) =>{
                 window.theInstance = instance;
 
                 // set initial canvas size
@@ -94,15 +89,13 @@
                 window.requestAnimationFrame(tickJS);
             };
 
-        window.onkeydown = function(event)
-        {
+            window.onkeydown = function(event){
                 // Prevent Arrows Keys and Spacebar scrolling the outer page
                 // when running inside an iframe. e.g: itch.io embedding.
                 if ([32, 37, 38, 39, 40].indexOf(event.keyCode) > -1)
                     event.preventDefault();
             };
-        window.onmousewheel = function(event)
-        {
+            window.onmousewheel = function(event){
                 // Prevent Mousewheel scrolling the outer page
                 // when running inside an iframe. e.g: itch.io embedding.
                 event.preventDefault();

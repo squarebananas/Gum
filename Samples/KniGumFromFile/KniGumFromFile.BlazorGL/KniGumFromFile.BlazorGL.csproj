@@ -9,7 +9,7 @@
     <RootNamespace>KniGumFromFile</RootNamespace>
     <AssemblyName>KniGumFromFile</AssemblyName>
     <DefineConstants>$(DefineConstants);BLAZORGL</DefineConstants>
-	  <KniPlatform>BlazorGL</KniPlatform>
+    <KniPlatform>BlazorGL</KniPlatform>
   </PropertyGroup>
   
   <PropertyGroup>

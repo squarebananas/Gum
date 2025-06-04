@@ -6,7 +6,7 @@
     <ProjectGuid>16e767a3-be53-4718-a6b5-1d08cf95dfc5</ProjectGuid>
     <OutputType>Exe</OutputType>
     <IsTrimmable>True</IsTrimmable>
-	  <TrimMode>partial</TrimMode>
+    <TrimMode>partial</TrimMode>
     <RootNamespace>KniGumInCode</RootNamespace>
     <AssemblyName>KniGumInCode</AssemblyName>
     <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
