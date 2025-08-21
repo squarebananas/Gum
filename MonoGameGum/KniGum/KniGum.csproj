@@ -142,4 +142,8 @@
     <Compile Remove="..\**\obj\**\*.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include="..\Content\UISpriteSheet.png" Link="UISpriteSheet.png" />
+  </ItemGroup>
+
 </Project>
