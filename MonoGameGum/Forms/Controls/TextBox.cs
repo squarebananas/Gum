@@ -262,7 +262,7 @@ public class TextBox : TextBoxBase
 
     protected override void HandlePaste()
     {
-        var whatToPaste = Clipboard.ClipboardImplementation.GetText();
+        var whatToPaste = ClipboardImplementation.GetText(HandlePaste);
 
         if (!string.IsNullOrEmpty(whatToPaste))
         {
