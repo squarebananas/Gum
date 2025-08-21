@@ -1,3 +1,7 @@
 [submodule "fna"]
 	path = fna
 	url = https://github.com/FNA-XNA/FNA
+[submodule "Submodules/KniSB"]
+	path = Submodules/KniSB
+	url = https://github.com/squarebananas/kniSB.git
+	branch = Work-In-Progress-(Gumknix)

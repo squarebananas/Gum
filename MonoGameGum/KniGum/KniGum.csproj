@@ -123,8 +123,21 @@
 		<Folder Include="RenderingLibrary\" />
 	</ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.Audio\Xna.Framework.Audio.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.Content\Xna.Framework.Content.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.Devices\Xna.Framework.Devices.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.Game\Xna.Framework.Game.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.Graphics\Xna.Framework.Graphics.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.Input\Xna.Framework.Input.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.Media\XNA.Framework.Media.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.Storage\Xna.Framework.Storage.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework.XR\Xna.Framework.XR.csproj" />
+    <ProjectReference Include="..\..\Submodules\KniSB\src\Xna.Framework\Xna.Framework.csproj" />
+  </ItemGroup>
+
 	<ItemGroup>
-		<PackageReference Include="nkast.Xna.Framework" Version="4.1.9001" />
+		<!--<PackageReference Include="nkast.Xna.Framework" Version="4.1.9001" />
 		<PackageReference Include="nkast.Xna.Framework.Content" Version="4.1.9001" />
 		<PackageReference Include="nkast.Xna.Framework.Graphics" Version="4.1.9001" />
 		<PackageReference Include="nkast.Xna.Framework.Audio" Version="4.1.9001" />
@@ -133,7 +146,7 @@
 		<PackageReference Include="nkast.Xna.Framework.Game" Version="4.1.9001" />
 		<PackageReference Include="nkast.Xna.Framework.Devices" Version="4.1.9001" />
 		<PackageReference Include="nkast.Xna.Framework.Storage" Version="4.1.9001" />
-		<PackageReference Include="nkast.Xna.Framework.XR" Version="4.1.9001" />
+		<PackageReference Include="nkast.Xna.Framework.XR" Version="4.1.9001" />-->
 
 		<PackageReference Include="TextCopy" Version="6.2.1" />
 	</ItemGroup>
